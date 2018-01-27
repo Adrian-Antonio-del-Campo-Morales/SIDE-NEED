@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Mon May 02 19:25:06 CEST 2016
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=true
+jarname=C\:\\Users\\Pholtergate\\Desktop\\SideNeed.jar
+manifest.mergeall=true
+manifest.mainclass=presentacion.seminariotres
+manifest.file=<createnew>
+jarname.isextern=true
+onejar.expand=
+excludes=
+includes=

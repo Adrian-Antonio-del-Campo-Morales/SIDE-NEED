@@ -19,10 +19,10 @@ import java.util.Arrays;
  * 
  * 
  * @input: Original XLSX database´s 87 attributes.
- * @output: An XLSX file containing 87 attributes transformed to the [-2,-1,0,1,2]
- *          range. The names of the output must be changed to the ones used in
- *          the project to identify the children characteristics (example:
- *          ExecFun_1) , and rearranged alphabetically.
+ * @output: An XLSX file containing 87 attributes transformed to the
+ *          [-2,-1,0,1,2] range. The names of the output must be changed to the
+ *          ones used in the project to identify the children characteristics
+ *          (example: ExecFun_1) , and rearranged alphabetically.
  */
 public class AttributeTransformator {
 
@@ -33,7 +33,6 @@ public class AttributeTransformator {
 	private static String sheetName = "TransformedValues";
 
 	public static void main(String[] args) {
-
 		System.out.println("--- AttributeTransformator STARTING ---");
 
 		String[][] dataMatrix = new String[numRows][numCols];
@@ -51,7 +50,6 @@ public class AttributeTransformator {
 		xlsx.XLSXManager.createXLSX(outputFileName, sheetName, dataMatrix);
 
 		System.out.println("--- AttributeTransformator FINISHED ---");
-
 	}
 
 	/**
@@ -64,7 +62,7 @@ public class AttributeTransformator {
 	 *         otherwise.
 	 */
 	private static boolean isInvalidValue(String value) {
-		
+
 		// List of values considered as "Missing Values" in the project.
 		ArrayList<String> nonValidValues = new ArrayList<>(Arrays.asList("REFUSED", "DON'T KNOW",
 				"NO OPPORTUNITY TO OBSERVE", "NOT ASCERTAINED", "NOT APPLICABLE"));

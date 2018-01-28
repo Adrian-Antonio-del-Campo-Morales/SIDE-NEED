@@ -72,7 +72,7 @@ public class XLSXManager {
 	 * @param sheetName,
 	 *            the name of the sheet that will contain the data.
 	 * @param dataMatrix,
-	 *            the matrix containing the information that will be stored. 
+	 *            the matrix containing the information that will be stored.
 	 */
 	public static void createXLSX(String fileName, String sheetName, String[][] dataMatrix) {
 		System.out.println("--- STARTING TO CREATE XLSX FILE : " + fileName + " ---");

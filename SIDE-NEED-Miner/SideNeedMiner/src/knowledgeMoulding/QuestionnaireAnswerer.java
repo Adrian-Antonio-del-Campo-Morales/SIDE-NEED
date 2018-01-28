@@ -47,13 +47,13 @@ public class QuestionnaireAnswerer {
 		// Uses the XLSXManager to read the input file, defined in the class,
 		// and stores it in the given matrix.
 		xlsx.XLSXManager.readXLSX(inputFileName, dataMatrix);
-		
+
 		mergeValues(dataMatrix);
 
 		// Uses the XLSXManager to create a file in the path defined in the
 		// class, and stores the output of the process.
 		xlsx.XLSXManager.createXLSX(outputFileName, sheetName, dataMatrix);
-		
+
 		System.out.println("--- ValueMerger FINISHED ---");
 
 	}
@@ -96,7 +96,7 @@ public class QuestionnaireAnswerer {
 
 				assignAnswer(dataMatrix, dataPoints, medValue, row, col);
 			}
-			
+
 			// Jumps to the next question according to the number of dataPoints.
 			col = col + dataPoints;
 		}
@@ -131,8 +131,8 @@ public class QuestionnaireAnswerer {
 				} else {
 					dataMatrix[row][col + currentCol] = "NULL";
 				}
-				
-			// Leaves the field as blanks.
+
+				// Leaves the field as blanks.
 			} else {
 				dataMatrix[row][col + currentCol] = "";
 				dataMatrix[0][col + currentCol] = "";

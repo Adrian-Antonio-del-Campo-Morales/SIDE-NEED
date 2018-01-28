@@ -9,7 +9,7 @@ import java.util.TreeMap;
  * 
  * @attribute mapsMap The map used to assigns the appropriate
  *            “TransformationMap” to each attribute of the project.
- * @attribute map X Y Each of the “TransformationMaps” used in the project. "X"
+ * @attribute mapXY Each of the “TransformationMaps” used in the project. "X"
  *            represents the range of possible values. "Y" is the
  *            proportionality of the relation of that particular attribute.
  */
@@ -194,8 +194,7 @@ public class TransformationMapsManager {
 			return mapsMap.get(currentAttribute).get(Integer.valueOf(originalValue)).toString();
 		} catch (Exception e) {
 			System.out.println("MAPPING_ERROR");
-			System.out.println("currentVar    |" + currentAttribute + "|");
-			System.out.println("value    |" + originalValue + "|");
+			e.printStackTrace();
 			return "MAPPING_ERROR";
 		}
 

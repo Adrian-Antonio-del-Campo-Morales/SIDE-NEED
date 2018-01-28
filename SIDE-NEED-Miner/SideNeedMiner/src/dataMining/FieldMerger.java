@@ -35,7 +35,6 @@ public class FieldMerger {
 	private static String sheetName = "TransformedDataset";
 
 	public static void main(String[] args) {
-
 		System.out.println("--- FieldTransformator STARTING ---");
 
 		String[][] dataMatrix = new String[numRows][numCols];
@@ -51,11 +50,6 @@ public class FieldMerger {
 		xlsx.XLSXManager.createXLSX(outputFileName, sheetName, dataMatrix);
 
 		System.out.println("--- FieldTransformator FINISHED ---");
-
-		// // ADD DIAG
-		// // REPLICAR DATOS DE DIAGNOSTICOS MULTIPLES
-		// // OVERSAMPLEAR X5
-
 	}
 
 	/**

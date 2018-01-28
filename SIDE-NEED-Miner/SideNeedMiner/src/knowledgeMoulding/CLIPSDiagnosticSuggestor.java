@@ -35,7 +35,6 @@ public class CLIPSDiagnosticSuggestor {
 	private static String sheetName = "DiagnosisSuggestions";
 
 	public static void main(String[] args) {
-
 		System.out.println("--- CLIPSDiagnosticator STARTING ---");
 
 		String[][] dataMatrix = new String[numRows][numCols];

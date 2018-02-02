@@ -177,9 +177,12 @@ If you are using the CLIPSJNI on Mac OS X, then the native CLIPS library is alre
 contained in the top level CLIPSJNI directory.
 
 
-
 On other systems, you must created a native library using the source files contained 
 in the library-src directory before you can utilize the CLIPSJNI.
+
+
+The CLIPSJNI jar file is also contained in the top level CLIPSJNI directory. The source files
+used to create the jar file are contained in the java-src directory.
 
 
 
@@ -187,8 +190,5 @@ in the library-src directory before you can utilize the CLIPSJNI.
 
 WARNING: Some antivirus may run a quick analysis ore even block the execution.
 Consider disabling them if this happens.
-
-The CLIPSJNI jar file is also contained in the top level CLIPSJNI directory. The source files
-used to create the jar file are contained in the java-src directory.
 
 

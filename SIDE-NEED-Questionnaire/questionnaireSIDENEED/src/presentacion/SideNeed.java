@@ -615,7 +615,7 @@ public class SideNeed {
 
 	private class BtnshallowADHDADPActionListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			File file = getResourceAsFile("resources/shallowADHDADP.svg", ".svg");
+			File file = getResourceAsFile("resources/shallowADHDADP.pdf", ".pdf");
 			try {
 				Desktop.getDesktop().browse(file.toURI());
 			} catch (IOException ex) {
@@ -627,7 +627,7 @@ public class SideNeed {
 
 	private class BtnshallowADHDHPActionListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			File file = getResourceAsFile("resources/shallowADHDHP.svg", ".svg");
+			File file = getResourceAsFile("resources/shallowADHDHP.pdf", ".pdf");
 			try {
 				Desktop.getDesktop().browse(file.toURI());
 			} catch (IOException ex) {
@@ -639,7 +639,7 @@ public class SideNeed {
 
 	private class BtnshallowCombinedADHDActionListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			File file = getResourceAsFile("resources/shallowCombinedADHD.svg", ".svg");
+			File file = getResourceAsFile("resources/shallowCombinedADHD.pdf", ".pdf");
 			try {
 				Desktop.getDesktop().browse(file.toURI());
 			} catch (IOException ex) {
@@ -651,7 +651,7 @@ public class SideNeed {
 
 	private class BtnshallowLSDActionListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			File file = getResourceAsFile("resources/shallowLSD.svg", ".svg");
+			File file = getResourceAsFile("resources/shallowLSD.pdf", ".pdf");
 			try {
 				Desktop.getDesktop().browse(file.toURI());
 			} catch (IOException ex) {
@@ -663,7 +663,7 @@ public class SideNeed {
 
 	private class BtnshallowSCDActionListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			File file = getResourceAsFile("resources/shallowSCD.svg", ".svg");
+			File file = getResourceAsFile("resources/shallowSCD.pdf", ".pdf");
 			try {
 				Desktop.getDesktop().browse(file.toURI());
 			} catch (IOException ex) {

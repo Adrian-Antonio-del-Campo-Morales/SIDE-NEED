@@ -615,9 +615,9 @@ public class SideNeed {
 
 	private class BtnshallowADHDADPActionListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			File file = getResourceAsFile("resources/shallowADHDADP.pdf", ".pdf");
+			File treeFile = getResourceAsFile("resources/shallowADHDADP.pdf", ".pdf");
 			try {
-				Desktop.getDesktop().browse(file.toURI());
+				Desktop.getDesktop().browse(treeFile.toURI());
 			} catch (IOException ex) {
 				// TODO Auto-generated catch block
 				ex.printStackTrace();
@@ -627,9 +627,9 @@ public class SideNeed {
 
 	private class BtnshallowADHDHPActionListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			File file = getResourceAsFile("resources/shallowADHDHP.pdf", ".pdf");
+			File treeFile = getResourceAsFile("resources/shallowADHDHP.pdf", ".pdf");
 			try {
-				Desktop.getDesktop().browse(file.toURI());
+				Desktop.getDesktop().browse(treeFile.toURI());
 			} catch (IOException ex) {
 				// TODO Auto-generated catch block
 				ex.printStackTrace();
@@ -639,9 +639,9 @@ public class SideNeed {
 
 	private class BtnshallowCombinedADHDActionListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			File file = getResourceAsFile("resources/shallowCombinedADHD.pdf", ".pdf");
+			File treeFile = getResourceAsFile("resources/shallowCombinedADHD.pdf", ".pdf");
 			try {
-				Desktop.getDesktop().browse(file.toURI());
+				Desktop.getDesktop().browse(treeFile.toURI());
 			} catch (IOException ex) {
 				// TODO Auto-generated catch block
 				ex.printStackTrace();
@@ -651,9 +651,9 @@ public class SideNeed {
 
 	private class BtnshallowLSDActionListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			File file = getResourceAsFile("resources/shallowLSD.pdf", ".pdf");
+			File treeFile = getResourceAsFile("resources/shallowLSD.pdf", ".pdf");
 			try {
-				Desktop.getDesktop().browse(file.toURI());
+				Desktop.getDesktop().browse(treeFile.toURI());
 			} catch (IOException ex) {
 				// TODO Auto-generated catch block
 				ex.printStackTrace();
@@ -663,9 +663,9 @@ public class SideNeed {
 
 	private class BtnshallowSCDActionListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			File file = getResourceAsFile("resources/shallowSCD.pdf", ".pdf");
+			File treeFile = getResourceAsFile("resources/shallowSCD.pdf", ".pdf");
 			try {
-				Desktop.getDesktop().browse(file.toURI());
+				Desktop.getDesktop().browse(treeFile.toURI());
 			} catch (IOException ex) {
 				// TODO Auto-generated catch block
 				ex.printStackTrace();
@@ -1163,9 +1163,12 @@ public class SideNeed {
 
 	private void clips() {
 
+		File rulesFile = getResourceAsFile("resources/Rules.clp", ".clp");
 		Environment clips = new Environment();
-		clips.load("Rules.clp");
+		
+		clips.load(rulesFile.getAbsolutePath());
 		clips.reset();
+
 
 		for (String fact : facts) {
 			System.out.println("aserting" + fact);

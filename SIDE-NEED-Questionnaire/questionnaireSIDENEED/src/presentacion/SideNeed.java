@@ -619,7 +619,7 @@ public class SideNeed {
 			try {
 				Desktop.getDesktop().browse(treeFile.toURI());
 			} catch (IOException ex) {
-				// TODO Auto-generated catch block
+
 				ex.printStackTrace();
 			}
 		}
@@ -631,7 +631,7 @@ public class SideNeed {
 			try {
 				Desktop.getDesktop().browse(treeFile.toURI());
 			} catch (IOException ex) {
-				// TODO Auto-generated catch block
+
 				ex.printStackTrace();
 			}
 		}
@@ -643,7 +643,7 @@ public class SideNeed {
 			try {
 				Desktop.getDesktop().browse(treeFile.toURI());
 			} catch (IOException ex) {
-				// TODO Auto-generated catch block
+
 				ex.printStackTrace();
 			}
 		}
@@ -655,7 +655,6 @@ public class SideNeed {
 			try {
 				Desktop.getDesktop().browse(treeFile.toURI());
 			} catch (IOException ex) {
-				// TODO Auto-generated catch block
 				ex.printStackTrace();
 			}
 		}
@@ -667,7 +666,7 @@ public class SideNeed {
 			try {
 				Desktop.getDesktop().browse(treeFile.toURI());
 			} catch (IOException ex) {
-				// TODO Auto-generated catch block
+
 				ex.printStackTrace();
 			}
 		}
@@ -1165,10 +1164,9 @@ public class SideNeed {
 
 		File rulesFile = getResourceAsFile("resources/Rules.clp", ".clp");
 		Environment clips = new Environment();
-		
+
 		clips.load(rulesFile.getAbsolutePath());
 		clips.reset();
-
 
 		for (String fact : facts) {
 			System.out.println("aserting" + fact);

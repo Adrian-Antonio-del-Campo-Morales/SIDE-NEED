@@ -158,37 +158,37 @@ Eclipse Memory Configuration Example:
 
 [![N|CLIPS](http://clipsrules.sourceforge.net/clips.gif)](http://clipsrules.sourceforge.net/)
 
-For the diagnosis suggestion process, this projects uses  [CLIPS.](http://clipsrules.sourceforge.net/)
-
-On Windows, it is necessary to verify that the correct DLL is installed.
-
-If you have never used CLIPSJNI before then you should copy the CLIPSJNI.dll file
-on one of the following paths: “C:\Windows” or “C:\Windows\System32”.
-
-By default, the DLL for 64-bit Windows is used as the CLIPSJNI.dll file in the top
-level of the CLIPSJNI directory. If running CLIPSJNI with 32-bit Windows, delete the
-existing CLIPSJNI.dll file, then make a copy of the CLIPSJNI32.dll file and rename 
-it to CLIPSJNI.dll.
+For the diagnosis suggestion process, this project uses  [CLIPS.](http://clipsrules.sourceforge.net/)
 
 
 
 
-If you are using the CLIPSJNI on Mac OS X, then the native CLIPS library is already
-contained in the top level CLIPSJNI directory.
+“EASY” NO-Installation:
 
-
-On other systems, you must created a native library using the source files contained 
-in the library-src directory before you can utilize the CLIPSJNI.
-
-
-The CLIPSJNI jar file is also contained in the top level CLIPSJNI directory. The source files
-used to create the jar file are contained in the java-src directory.
+The system will work as long as the “CLIPSJNI.dll” file is located in the same path or folder, 
+that contains the SIDE-NEED.exe, or if it is executed from within the .rar file.
 
 
 
 
+“PROPER” Installation:
 
-WARNING: Some antivirus may run a quick analysis ore even block the execution.
-Consider disabling them if this happens.
+If you have never used CLIPSJNI before then you should copy the CLIPSJNI.dll file on one of the 
+following paths: “C:\Windows” or “C:\Windows\System32”.
+
+By default, the DLL for 64-bit Windows is used as the CLIPSJNI.dll file in the top level of the 
+CLIPSJNI directory. If running CLIPSJNI with 32-bit Windows, delete the existing CLIPSJNI.dll file, 
+then make a copy of the CLIPSJNI32.dll file and rename it to CLIPSJNI.dll.
+
+If you are using the CLIPSJNI on Mac OS X, then the native CLIPS library is already contained in 
+the top level CLIPSJNI directory.
+
+On other systems, you must create a native library using the source files contained in the 
+library-src directory before you can utilize the CLIPSJNI.
+
+
+WARNING: 
+Some antivirus may run a quick analysis ore even block the execution. If this happens, consider 
+disabling them, or adding an exception.
 
 
